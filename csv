@@ -8,8 +8,8 @@ else
   DIR=`dirname $(which csv)`
   if [[ $# < 2 ]]
   then
-    awk -f $DIR"/csv.awk" $1
+    awk -f $DIR"/csvreader.awk" $1
   else 
-    awk -f $DIR"/csv.awk" -v "regex=$1" $2
+    awk -f $DIR"/csvreader.awk" -v "regex=$1" $2
   fi
 fi
