@@ -4,7 +4,7 @@ These are a couple of scripts I put together that will aid working with CSV file
 ## Usage
 CSVreader accepts one (optional) positional parameter: a search string.
 
-### Example: invocation without parameters
+### Example: Invocation without parameters
 Here is an example .csv file containing information about some ancient Greek philosophers:
 ```csv
 name,city,dob
