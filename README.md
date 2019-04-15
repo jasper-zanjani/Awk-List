@@ -2,7 +2,7 @@
 These are a couple of scripts I put together that will aid working with CSV files. The script assumes the csv file you're working with has headers
 
 ## Usage
-CSVreader has one parameter which is optional, representing a string or regex expression.
+CSVreader accepts one (optional) positional parameter: a search string.
 
 ### Example: invocation without parameters
 Here is an example .csv file containing information about some ancient Greek philosophers:
