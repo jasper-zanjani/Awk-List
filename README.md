@@ -1,5 +1,7 @@
 # CSVreader
-These are a couple of scripts I put together that will aid working with CSV files. The script assumes the csv file you're working with has headers
+These are a couple of scripts I put together that will aid working with CSV files by printing the heading alongside each field's data. The script obviously presumes the first row of the CSV file contains the heading.
+
+It started out as a demonstration .awk script with a .sh wrapper, but I ported it to Python as well.
 
 ## Usage
 CSVreader accepts one (optional) positional parameter: a search string.
