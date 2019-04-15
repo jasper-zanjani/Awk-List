@@ -1,0 +1,3 @@
+#!/bin/bash
+
+awk -f ~/Scripts/csv.awk -v "regex=$1" $2
