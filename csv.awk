@@ -8,7 +8,7 @@ NR==1 {
 }
 NR>1 {
   if ($0 ~ regex) {
-    for (i=1; i<length(heading); i++) {
+    for (i=1; i<=length(heading); i++) {
       if(length($i) > 0) { printf("%-10s: %s \n", heading[i] ,$i) } 
     }
     print("")

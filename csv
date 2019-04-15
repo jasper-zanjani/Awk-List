@@ -1,3 +1,7 @@
 #!/bin/bash
-
-awk -f ~/Scripts/csv.awk -v "regex=$1" $2
+if [ `which csv` -ne 0 ]
+then
+  echo "Add this script's directory to the PATH"
+else
+  awk -f "$(dirname $(which csv))/csv.awk" -v "regex=$1" $2
+fi
