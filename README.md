@@ -7,7 +7,7 @@ It started out as a demonstration .awk script with a .sh wrapper, but I ported i
 CSVreader accepts one (optional) positional parameter: a search string.
 
 ### Example 1: Invocation without parameters
-Here is an example .csv file containing information about some ancient Greek philosophers:
+Here is an example .csv file containing information about some [ancient Greek philosophers](https://github.com/jasper-zanjani/csvdata.git):
 ```csv
 name,city,dob
 Socrates,Athens,470 BC
@@ -43,7 +43,7 @@ dob       : 570 BC
 ```
 
 ### Example 2: Search for string
-Here is an example csv file containing information about various historical warships:
+Here is an example csv file containing information about [various historical warships](https://github.com/jasper-zanjani/csvdata.git):
 ```csv
 name,country,displacement,length,beam,commissioned
 Yamato,Japan,65027,256,38.9,16 December 1941
