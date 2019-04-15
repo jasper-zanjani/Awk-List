@@ -2,9 +2,45 @@
 These are a couple of scripts I put together that will aid working with CSV files. The script assumes the csv file you're working with has headers
 
 ## Usage
-The general pattern for using this utility is, if you're searching for a record containing _searchstring_ within _csvfile_: `csv searchstring csvfile`.
+CSVreader has one parameter which is optional, representing a string or regex expression.
 
-### Example
+### Example: invocation without parameters
+Here is an example .csv file containing information about some ancient Greek philosophers:
+```csv
+name,city,dob
+Socrates,Athens,470 BC
+Plato,Athens,428 BC
+Aristotle,Stagira,384 BC
+Euclid,Alexandria,325 BC
+Pythagoras,Samos,570 BC
+```
+
+Invoke the script with just the filename: `csv greeks.csv`
+
+Output:
+```
+name      : Socrates 
+city      : Athens 
+dob       : 470 BC 
+
+name      : Plato 
+city      : Athens 
+dob       : 428 BC 
+
+name      : Aristotle 
+city      : Stagira 
+dob       : 384 BC 
+
+name      : Euclid 
+city      : Alexandria 
+dob       : 325 BC 
+
+name      : Pythagoras 
+city      : Samos 
+dob       : 570 BC 
+```
+
+### Example 2: Search for string
 Here is an example csv file containing information about various historical warships:
 ```csv
 name,country,displacement,length,beam,commissioned
@@ -16,7 +52,7 @@ USS Iowa,United States of America,46000,270.43,32.97,22 February 1943
 HMS Vanguard,United Kingdom,45200,248.2,32.9,12 May 1946
 ```
 
-We search for the Enterprise: `csv Enterprise ships.csv`
+Search for United States warships: `csv USS ships.csv`
 
 Output:
 ```
@@ -25,5 +61,12 @@ country   : United States of America
 displacement: 19800 
 length    : 251.4 
 beam      : 33.4 
-```
+commissioned: 12 May 1938 
 
+name      : USS Iowa 
+country   : United States of America 
+displacement: 46000 
+length    : 270.43 
+beam      : 32.97 
+commissioned: 22 February 1943 
+```
