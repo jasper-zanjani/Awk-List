@@ -1,5 +1,5 @@
 # CSVreader
-This is a couple of scripts I put together that will aid working with CSV files. The script assumes the csv file you're working with has headers
+These are a couple of scripts I put together that will aid working with CSV files. The script assumes the csv file you're working with has headers
 
 ## Usage
 The general pattern for using this utility is, if you're searching for a record containing _searchstring_ within _csvfile_: `csv searchstring csvfile`.
