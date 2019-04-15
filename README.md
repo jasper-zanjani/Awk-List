@@ -6,7 +6,7 @@ It started out as a demonstration .awk script with a .sh wrapper, but I ported i
 ## Usage
 CSVreader accepts one (optional) positional parameter: a search string.
 
-### Example: Invocation without parameters
+### Example 1: Invocation without parameters
 Here is an example .csv file containing information about some ancient Greek philosophers:
 ```csv
 name,city,dob
