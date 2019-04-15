@@ -1,5 +1,6 @@
 #!/bin/bash
-if [ `which csv` -ne 0 ]
+which csv >& /dev/null
+if [ $? -ne 0 ]
 then
   echo "Add this script's directory to the PATH"
 else
