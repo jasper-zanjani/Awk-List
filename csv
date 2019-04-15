@@ -1,8 +1,15 @@
 #!/bin/bash
+
 which csv >& /dev/null
-if [ $? -ne 0 ]
+if [[ $? -ne 0 ]]
 then
   echo "Add this script's directory to the PATH"
 else
-  awk -f "$(dirname $(which csv))/csv.awk" -v "regex=$1" $2
+  DIR=`dirname $(which csv)`
+  if [[ $# < 2 ]]
+  then
+    awk -f $DIR"/csv.awk" $1
+  else 
+    awk -f $DIR"/csv.awk" -v "regex=$1" $2
+  fi
 fi
