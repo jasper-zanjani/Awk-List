@@ -15,9 +15,9 @@ Euclid,Alexandria,325 BC
 Pythagoras,Samos,570 BC
 ```
 
-Invoke the script with just the filename: `csv greeks.csv`
+$ **`csv greeks.csv`**
 
-Output:
+#### Output:
 ```
 name      : Socrates 
 city      : Athens 
@@ -52,9 +52,9 @@ USS Iowa,United States of America,46000,270.43,32.97,22 February 1943
 HMS Vanguard,United Kingdom,45200,248.2,32.9,12 May 1946
 ```
 
-Search for United States warships: `csv USS ships.csv`
+$ **`csv USS ships.csv`**
 
-Output:
+#### Output:
 ```
 name      : USS Enterprise 
 country   : United States of America 
